@@ -1,0 +1,29 @@
+body {
+    background-color: #E6DBAE;
+    margin: 7.5%;
+    font-size: 14pt;
+    /* From https://www.w3schools.com/cssref/css_websafe_fonts.asp */
+    font-family: "Times New Roman", Times, serif;
+}
+
+
+/* Targets the preamble at the start of the document. */
+body>pre:nth-child(1) {
+    font-size: 0.5em;
+}
+
+@media (min-width: 750px) {
+    p {
+        width: 750px;
+    }
+}
+
+h1 {
+    font-size: 3em;
+    /* From https://www.w3schools.com/cssref/css_websafe_fonts.asp */
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+
+h2 {
+    font-size: 2em;
+}

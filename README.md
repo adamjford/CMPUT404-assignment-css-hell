@@ -21,4 +21,9 @@ repository and (C) 2013 Abram Hindle visibile in the text.
 
 Code is licensed under the Apache 2.0 license.
 
+Part I - Project Gutenberg
+===========================
 
+Modification made to the HTML:
+
+* Removed the style element in the head; added reference to my CSS file
