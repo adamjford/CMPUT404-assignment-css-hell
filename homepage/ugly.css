@@ -1,0 +1,95 @@
+/* Flexbox implementation from https://css-tricks.com/snippets/css/a-guide-to-flexbox/ */
+
+body {
+    font-family: 'Comic Sans MS';
+    background-image: url("mugshot.jpg");
+    font-size: 12pt;
+    color: purple;
+}
+
+h1 {
+    font-size: 5em;
+    margin: 0;
+    text-align: center;
+    color: white;
+}
+
+h2 {
+    font-size: 2em;
+    margin-top: 0.5em;
+    margin-bottom: 0.25em;
+    color: red;
+    font-family: 'Impact', Charcoal, sans-serif;
+    text-align: right;
+}
+
+h3 {
+    color: blue;
+}
+
+/* Main container for all content -- floats in the middle of the window */
+section#container {
+    display: flex;
+    flex-flow: row wrap;
+    background: linear-gradient(to bottom left, gold, chartreuse);
+    width: 1000px;
+    margin: 10px 40%;
+    padding: 15px 15px 15px 15px;
+}
+
+/* From https://www.w3schools.com/css/css3_animations.asp */
+@keyframes header-gradient {
+    /* From https://www.w3schools.com/css/css3_gradients.asp */ 
+    from {background: linear-gradient(to bottom right, red, blue);}
+    to {background: linear-gradient(to bottom right, blue, red);}
+}
+
+section#header {
+    /* Header grows to 100% of the row's width */
+    flex: 1 100%;
+    animation-name: header-gradient;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+}
+
+section#main {
+    /* Main grows to 70% of the row's width */
+    flex: 7 0px;
+}
+
+/* Floats to the right of the main content */
+section#sidebar {
+    /* Sidebar grows to 30% of the row's width */
+    flex: 3 0px;
+    background-color: yellow;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-top: 5px;
+}
+
+section#who-i-am {
+    display: flex;
+    align-items: center;
+}
+
+section#who-i-am p {
+    margin: 0 1em;
+}
+
+section.details h3 {
+    margin-top: 0.25em;
+    margin-bottom: 0.25em;
+}
+
+section.details p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+section.details ul {
+    margin-top: 0;
+}
+
+li {
+    list-style: lower-greek;
+}
