@@ -43,6 +43,12 @@ section#container {
     from {background: linear-gradient(to bottom right, red, blue);}
     to {background: linear-gradient(to bottom right, blue, red);}
 }
+/* From https://www.w3schools.com/css/css3_animations.asp */
+@-moz-keyframes header-gradient {
+    /* From https://www.w3schools.com/css/css3_gradients.asp */ 
+    from {background: linear-gradient(to bottom right, red, blue);}
+    to {background: linear-gradient(to bottom right, blue, red);}
+}
 
 section#header {
     /* Header grows to 100% of the row's width */
@@ -50,6 +56,9 @@ section#header {
     animation-name: header-gradient;
     animation-duration: 0.5s;
     animation-iteration-count: infinite;
+    -moz-animation-name: header-gradient;
+    -moz-animation-duration: 0.5s;
+    -moz-animation-iteration-count: infinite;
 }
 
 section#main {
