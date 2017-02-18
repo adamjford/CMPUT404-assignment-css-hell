@@ -1,7 +1,7 @@
 /* Flexbox implementation from https://css-tricks.com/snippets/css/a-guide-to-flexbox/ */
 
 body {
-    font-family: 'Comic Sans MS';
+    font-family: 'Comic Sans MS', 'Purisa', 'FreeMono', serif;
     background-image: url("mugshot.jpg");
     font-size: 12pt;
     color: purple;
