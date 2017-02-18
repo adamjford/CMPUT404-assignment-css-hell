@@ -1,0 +1,74 @@
+/* Flexbox implementation from https://css-tricks.com/snippets/css/a-guide-to-flexbox/ */
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: dimgrey;
+    font-size: 12pt;
+}
+
+h1 {
+    font-size: 5em;
+    margin: 0;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2em;
+    margin-top: 0.5em;
+    margin-bottom: 0.25em;
+}
+
+/* Main container for all content -- floats in the middle of the window */
+section#container {
+    display: flex;
+    flex-flow: row wrap;
+    background-color: white;
+    width: 1000px;
+    margin: 10px auto;
+    padding: 15px 15px 15px 15px;
+    box-shadow: 0 0 25px black;
+}
+
+section#header {
+    /* Header grows to 100% of the row's width */
+    flex: 1 100%;
+    background-color: lightblue;
+}
+
+section#main {
+    /* Main grows to 70% of the row's width */
+    flex: 7 0px;
+}
+
+/* Floats to the right of the main content */
+section#sidebar {
+    /* Sidebar grows to 30% of the row's width */
+    flex: 3 0px;
+    background-color: lightgrey;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-top: 5px;
+}
+
+section#who-i-am {
+    display: flex;
+    align-items: center;
+}
+
+section#who-i-am p {
+    margin: 0 1em;
+}
+
+section.details h3 {
+    margin-top: 0.25em;
+    margin-bottom: 0.25em;
+}
+
+section.details p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+section.details ul {
+    margin-top: 0;
+}
